@@ -14,8 +14,10 @@ void main()
 	scanf_s("%d", &inputNum);
 	switch (inputNum)
 	{
+	
 		case 1:
 			add();
+			break;
 		case 2:
 			subtract();
 			break;
