@@ -4,39 +4,36 @@ void printWelcomeMenu();
 void printOptions();
 void add();
 
-
-void main() {
-
+void main() 
+{
 	printWelcomeMenu();
-
 	printOptions();
-
 	int inputNum;
-
 	printf("Enter operation number: ");
-	scanf_s("%1o", &inputNum);
-
+	scanf_s("%d", &inputNum);
 	switch (inputNum)
 	{
-	case 1:
-		add();
+		case 1:
+			add();
 	}
-
 }
 
-void printWelcomeMenu() {
+void printWelcomeMenu() 
+{
 	printf(" **********************\n");
 	printf("**   Welcome to the   **\n");
 	printf("**   BCS Calculator   **\n");
 	printf(" **********************\n");
 }
 
-void printOptions() {
+void printOptions() 
+{
 	printf("1. Add\n");
 	printf("2. Subtract\n");
 }
 
-void add() {
+void add() 
+{
 	double num1, num2, result;
 	printf("Enter the first value:");
 	scanf_s("%lf", &num1);
@@ -45,5 +42,3 @@ void add() {
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
 }
-
-lsadhjflkjasdlfa
